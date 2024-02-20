@@ -1,1 +1,3 @@
 base master
+
+merge dg/overlay-for-custom-nixpkgs
