@@ -32,6 +32,8 @@
           A template with flake-parts and nixpkgs-fmt.
         '';
       };
+
+      overlays.default = import ./nix/overlay.nix { isFlakes = true; gitignore-nix-src = gitignore; };
     }
     // flake-utils.lib.eachSystem defaultSystems (system:
       let
